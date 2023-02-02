@@ -54,7 +54,7 @@ import GemGrooveThumb from './GemGrooveThumb.jpg';
         value={audioFile}
         onDrop={handleDrop}
         onDragOver={event => event.preventDefault()}
-        style={{width: '100px', height: '50px', border: '2px solid orange'}}
+        style={{width: '100px', height: '50px',padding: '10px 20px', border: '2px solid orange', borderRadius: '20px'}}
       />
       {audioFile ? (
         <>
@@ -69,7 +69,7 @@ import GemGrooveThumb from './GemGrooveThumb.jpg';
       </button>
       <button onClick={handleMintClick} style={{backgroundColor: 'orange', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', marginTop: '1px'}}>
         Mint My Jam</button>
-        <button onClick={handleMintClick} style={{backgroundColor: 'orange', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '20px', marginTop: '20px', position: 'fixed',top:'90px'}}>
+        <button onClick={handleMintClick} style={{backgroundColor: 'orange', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '20px', marginTop: '20px', position: 'fixed',top:'70px'}}>
         Our Purpose</button>
       <a href="mailto:Hderek22@icloud.com">
         <button style={{backgroundColor: 'orange', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '20px', marginTop: '20px', position: 'fixed', bottom: '20px', right: '20px'}}>
