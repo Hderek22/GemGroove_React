@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import GemGrooveThumb from './GemGrooveThumb.jpg';
+import { HashRouter } from 'react-router-dom';
 
   const LogoApp = () => {
   const [isMetaMaskConnected, setIsMetaMaskConnected] = useState(false);
