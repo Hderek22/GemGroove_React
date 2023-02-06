@@ -2,4 +2,5 @@
 
 ## A singer/songwriters marketplace.
 
-![Gemgroove copy](https://user-images.githubusercontent.com/94722790/213843430-83f1372f-4226-413b-a922-fe05141394ad.jpg)
+
+<img width="1438" alt="Screenshot 2023-02-05 at 8 35 40 PM" src="https://user-images.githubusercontent.com/94722790/216863683-4eb2b8e7-50b9-48ee-b505-9c06d2764e88.png">
