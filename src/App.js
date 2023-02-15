@@ -25,18 +25,26 @@ import { HashRouter } from 'react-router-dom';
   
 
   const handleClick = async () => {
-    if (typeof window.ethereum === 'undefined') {
-      alert('Please install MetaMask to connect to your wallet.');
-      return;
-    }
+  if (typeof window.ethereum === 'undefined') {
+    alert('Please install MetaMask to connect to your wallet.');
+    return;
+  }
 
-    try {
-      await window.ethereum.enable();
-      setIsMetaMaskConnected(true);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  // Check if the user is already connected to a wallet
+  if (window.ethereum.selectedAddress) {
+    alert('You are already connected to a wallet!');
+    setIsMetaMaskConnected(true);
+    return;
+  }
+
+  try {
+    await window.ethereum.enable();
+    setIsMetaMaskConnected(true);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 
   const handleMintClick = () => {
     if (!isMetaMaskConnected) {
